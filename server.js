@@ -16,7 +16,7 @@ let temporaryFailuresRemaining = 0;
 
 app.get("/", (req, res) => {
   res.status(200).json({
-    message: "FlowForge health recovery test server is running",
+    message: "FlowForge health recovery test server is running with tunnel",
     pid: process.pid,
     uptime: process.uptime(),
     timestamp: new Date().toISOString(),
@@ -200,6 +200,7 @@ app.get("/fail-once", (req, res) => {
 | Should trigger recovery.
 |
 */
+
 
 app.get("/fail-next/:count", (req, res) => {
   const count = Number.parseInt(req.params.count, 10);
