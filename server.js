@@ -16,7 +16,7 @@ let temporaryFailuresRemaining = 0;
 
 app.get("/", (req, res) => {
   res.status(200).json({
-    message: "FlowForge health recovery test server is running with tunnel",
+    message: "FlowForge health recovery test server is running with tunnel yesssssssssss",
     pid: process.pid,
     uptime: process.uptime(),
     timestamp: new Date().toISOString(),
